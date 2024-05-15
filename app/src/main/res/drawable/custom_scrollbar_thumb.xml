@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FF0000" /> <!-- Customize the color of the scrollbar thumb -->
+    <corners android:radius="70dp" /> <!-- Customize the radius of the scrollbar thumb corners -->
+</shape>

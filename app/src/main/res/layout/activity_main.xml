@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_view" />
+
+
+
+    <GridLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/top_view"
+         android:columnCount="1"
+         android:rowCount="3"
+         android:layout_marginLeft="24dp"
+         android:layout_marginRight="25dp"
+         android:layout_marginTop="-80dp"
+         >
+
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             app:cardCornerRadius="15dp"
+             app:cardElevation="12dp"
+             android:layout_columnWeight="1"
+             android:layout_margin="12dp"
+             >
+
+
+
+             <LinearLayout
+                 android:id="@+id/nearByMe"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="#FFFFFF"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 >
+
+                 <ImageView
+                     android:layout_width="80dp"
+                     android:layout_height="80dp"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/near" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:text="@string/station_near_me"
+                     android:textColor="@color/black"
+                     android:textSize="20dp"
+                     android:textStyle="bold">
+
+                 </TextView>
+             </LinearLayout>
+             
+             
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             app:cardCornerRadius="15dp"
+             app:cardElevation="12dp"
+             android:layout_columnWeight="1"
+             android:layout_margin="12dp"
+             >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:background="#FFFFFF"
+                 android:gravity="center"
+                 android:onClick="stationNearDestination"
+
+
+                 >
+                 <ImageView
+                     android:layout_width="80dp"
+                     android:layout_height="80dp"
+                     android:src="@drawable/metro"
+                     android:layout_gravity="center_horizontal"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:gravity="center_horizontal"
+                     android:text="@string/station_near_by_my_destination"
+                     android:textSize="20dp"
+                     android:textStyle="bold"
+                     android:textColor="@color/black">
+
+                 </TextView>
+
+             </LinearLayout>
+
+
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             app:cardCornerRadius="15dp"
+             app:cardElevation="12dp"
+             android:layout_columnWeight="1"
+             android:layout_margin="12dp"
+
+             >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:background="#FFFFFF"
+                 android:gravity="center"
+                 android:onClick="detailsTrip"
+
+                 >
+                 <ImageView
+                     android:layout_width="80dp"
+                     android:layout_height="80dp"
+                     android:src="@drawable/det"
+                     android:layout_gravity="center_horizontal"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/detials_about_a_trip"
+                     android:layout_gravity="center_horizontal"
+                     android:textSize="20sp"
+                     android:textStyle="bold"
+                     android:textColor="@color/black">
+
+                 </TextView>
+
+             </LinearLayout>
+
+
+         </androidx.cardview.widget.CardView>
+
+
+<!--         <androidx.cardview.widget.CardView-->
+<!--             android:layout_width="150dp"-->
+<!--             android:layout_height="150dp"-->
+<!--             app:cardCornerRadius="15dp"-->
+<!--             app:cardElevation="12dp"-->
+<!--             android:layout_columnWeight="1"-->
+<!--             android:layout_margin="12dp"-->
+
+<!--             >-->
+<!--             <LinearLayout-->
+<!--                 android:layout_width="match_parent"-->
+<!--                 android:layout_height="match_parent"-->
+<!--                 android:orientation="vertical"-->
+<!--                 android:background="#FFFFFF"-->
+<!--                 android:gravity="center"-->
+
+<!--                 >-->
+<!--                 <ImageView-->
+<!--                     android:layout_width="60dp"-->
+<!--                     android:layout_height="60dp"-->
+<!--                     android:src="@drawable/set"-->
+<!--                     android:layout_gravity="center_horizontal"-->
+<!--                     />-->
+<!--                 <TextView-->
+<!--                     android:layout_width="wrap_content"-->
+<!--                     android:layout_height="wrap_content"-->
+<!--                     android:text="SETTINGS"-->
+<!--                     android:layout_gravity="center_horizontal"-->
+<!--                     android:textSize="20dp"-->
+<!--                     android:textStyle="bold"-->
+<!--                     android:textColor="@color/black">-->
+
+<!--                 </TextView>-->
+
+<!--             </LinearLayout>-->
+
+
+<!--         </androidx.cardview.widget.CardView>-->
+
+
+     </GridLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/find_me_a_metro_now"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+
+
+        />
+    <TextView
+        android:id="@+id/openmetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/currently_open"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/closemetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/currently_closed"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="settingsFun"
+        android:src="@drawable/set" />
+
+</RelativeLayout>
+
+</ScrollView>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

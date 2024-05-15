@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#FFFFFF">
+
+
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/bg_view" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_view"
+            android:columnCount="1"
+            android:rowCount="4"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="-80dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="300dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/nearByMe2.5.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="30dp"
+                        android:text="SELECT A STARTING POINT STATION"
+                        android:background="@drawable/btn1"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+<!--                    <Spinner-->
+<!--                        android:id="@+id/startSpinner"-->
+<!--                        android:layout_width="280dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:spinnerMode="dropdown" />-->
+
+                    <TextView
+                        android:id="@+id/autoLocation"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="9dp"
+                        android:textSize="20sp"
+                        android:layout_width="280dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:padding="12dp"
+                        android:hint="@string/from"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="8dp"
+                        android:drawableEnd="@drawable/arrow_drop_down_40"
+                        />
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="30dp"
+                        android:text="TYPE THE ENDING POINT STATION"
+                        android:background="@drawable/btn1"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+<!--                    <Spinner-->
+<!--                        android:id="@+id/endSpinner"-->
+<!--                        android:layout_width="280dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:spinnerMode="dropdown" />-->
+                    <AutoCompleteTextView
+                        android:id="@+id/autoDestination"
+                        android:layout_width="280dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:hint="to"
+                        android:visibility="visible"
+                        />
+                    <LinearLayout
+                        android:id="@+id/buttons"
+                        android:layout_width="250dp"
+                        android:layout_height="100dp"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal"
+                        android:gravity="center" >
+                    <Button
+                        android:id="@+id/btnPath"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn1"
+                        android:textColor="@color/white"
+                        android:text="GET A DETIAL"
+                        />
+                    <ImageView
+                        android:layout_margin="12dp"
+                        android:id="@+id/switchStations"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/arro"
+                        android:textColor="@color/white"
+
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="Know the detials about a specific trip"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

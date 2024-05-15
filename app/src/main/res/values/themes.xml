@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MetroV6" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MetroV6" parent="Base.Theme.MetroV6" />
+
+    <style name="CustomRecyclerViewScrollbar">
+        <item name="android:scrollbarThumbVertical">@drawable/custom_scrollbar_thumb</item>
+        <item name="android:scrollbarTrackVertical">@drawable/custom_scrollbar_track</item>
+    </style>
+
+    <style name="splashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark" >@color/grey</item>
+        <item name="colorAccent" >@color/switch_on_color</item>
+
+    </style>
+
+<!--    <style name="splashScreen" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        <item name="windowSplashScreenBackground">@color/grey</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon" >@drawable/metro</item>-->
+<!--        <item name="postSplashScreenTheme">@style/Base.Theme.MetroV6</item>-->
+
+<!--    </style>-->
+    
+</resources>

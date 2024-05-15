@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name" translatable="false">metroV6</string>
+
+    <string name="MAPS_API_KEY" translatable="false">AIzaSyDLlZ5zIWvoumSyKTAuEi97gKXU6_JgpPs</string>
+    <string name="settings">SETTINGS</string>
+    <string name="type_location_note">(*Note)Please enter a specific location and check your specifications (such as mentioning the area and the street of your destination, the more precise you gonna be the more accurate station you will get)</string>
+    <string name="loading">Connecting to your location</string>
+    <string name="find_me_a_metro_now">FIND ME A METRO,NOW!!</string>
+    <string name="station_near_me">STATION NEAR ME</string>
+    <string name="station_near_by_my_destination">STATION NEAR BY MY DESTINATION</string>
+    <string name="detials_about_a_trip">DETIALS ABOUT A TRIP</string>
+    <string name="currently_closed">🔴 Currently closed</string>
+    <string name="currently_open">🟢 Currently open</string>
+    <string name="nearest_station_by">THE NEAREST STATION BY ME RIGHT NOW</string>
+    <string name="your_location_is">YOUR LOCATION IS</string>
+    <string name="nearest_station_toyou">Nearest Station</string>
+    <string name="find_a_station">Find a station</string>
+    <string name="type_a_location_to_find_a_nearby_station">TYPE A LOCATION TO FIND A NEARBY STATION</string>
+    <string name="egyptian_or_english_only">Type a location here</string>
+    <string name="sounds">Sounds</string>
+    <string name="language">Language</string>
+    <string name="from">from</string>
+</resources>

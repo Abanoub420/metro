@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">إعدادات</string>
+    <string name="type_location_note">(*ملاحظة) يرجى إدخال موقع محدد والتحقق من المواصفات الخاصة بك (مثل ذكر المنطقة والشارع الذي تقصده، كلما زادت دقة المحطة التي ستحصل عليها)</string>
+    <string name="loading">جارى الاتصال بموقعك</string>
+    <string name="find_me_a_metro_now">هاتلى مترو ,دلوقتى!!</string>
+    <string name="station_near_me">محطة قريبة منى</string>
+    <string name="station_near_by_my_destination">محطة قريبة من مكان</string>
+    <string name="detials_about_a_trip">معلومات عن رحلة</string>
+    <string name="currently_closed">🔴 دلوقتى مغلق</string>
+    <string name="currently_open">🟢 دلوقتى فاتح</string>
+    <string name="nearest_station_by">أقرب محطة دلوقتى</string>
+    <string name="your_location_is">موقعك هو</string>
+    <string name="nearest_station_toyou">أقرب محطة</string>
+    <string name="find_a_station">ابحث عن محطة</string>
+    <string name="type_a_location_to_find_a_nearby_station">اكتب موقع(مكان) علشان تلقى محطة جنب منه</string>
+    <string name="egyptian_or_english_only">اكتب موقع هنا</string>
+    <string name="sounds">اصوات</string>
+    <string name="language">لغة</string>
+    <string name="from">من</string>
+
+
+</resources>

@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#CCCCCC" /> <!-- Customize the color of the scrollbar track -->
+    <corners android:radius="70dp" /> <!-- Customize the radius of the scrollbar track corners -->
+</shape>
